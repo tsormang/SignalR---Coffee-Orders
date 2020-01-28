@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>live Coffee!</title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <header class="row">
+            <div class="col-md-8">
+                <img height="200" src="Content/wired-brain-coffee-logo.png" alt="logo" />
+            </div>
+            <div class="jumbotron">
+                <h1>Loumidis ... <span style="color:saddlebrown">o kalyteros!</span></h1>
+            </div>
+        </header>
+        <form>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label htmlFor="product">Ti parei afentiko?</label>
+                    <input type="text"
+                           id="product"
+                           class="form-control"
+                           value="Kafes" />
+                </div>
+                <div class="form-group col-md-6">
+                    <label htmlFor="size">Megethos</label>
+                    <input type="text"
+                           id="size"
+                           class="form-control"
+                           value="Metrio" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <button id="submit" type="submit" class="btn btn-secondary">
+                        Submit
+                    </button>
+                </div>
+                <div class="col-md-6">
+                    <div id="status"></div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="/Scripts/jquery.signalR-2.4.1.min.js"></script>
+    <!--<script src="signalr/hubs"></script>-->
+    <script src="/Scripts/liveCoffeealt.js"></script>
+</body>
+</html>
